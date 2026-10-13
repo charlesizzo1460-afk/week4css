@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Style guide for my HTML journal">
+    <title>Style Guide</title>
+    <!-- Load the Barlow font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Same stylesheet as the journal, plus a few extra styles for this page -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleguide.css">
+  </head>
+  <body>
+    <header id="top-bar">
+      <h1>Style Guide</h1>
+      <p class="subtitle">Colors, fonts, and pieces used on my journal</p>
+    </header>
+
+    <main>
+      <!-- Colors -->
+      <section class="entry">
+        <h2>Colors</h2>
+        <div class="swatches">
+          <div class="swatch">
+            <div class="chip" style="background-color: #800020;"></div>
+            <p><strong>Burgundy</strong><br>#800020<br>Header, borders, headings</p>
+          </div>
+          <div class="swatch">
+            <div class="chip" style="background-color: #f7f1e8;"></div>
+            <p><strong>Cream</strong><br>#f7f1e8<br>Page background</p>
+          </div>
+          <div class="swatch">
+            <div class="chip" style="background-color: #f3e4e7;"></div>
+            <p><strong>Blush</strong><br>#f3e4e7<br>Quote background</p>
+          </div>
+          <div class="swatch">
+            <div class="chip" style="background-color: #ffffff;"></div>
+            <p><strong>White</strong><br>#ffffff<br>Entry cards</p>
+          </div>
+          <div class="swatch">
+            <div class="chip" style="background-color: #2b2b2b;"></div>
+            <p><strong>Charcoal</strong><br>#2b2b2b<br>Body text</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Typography -->
+      <section class="entry">
+        <h2>Typography</h2>
+        <table class="type-table">
+          <tr>
+            <th>Use</th>
+            <th>Font</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>Main text</td>
+            <td>Barlow, 400</td>
+            <td>The quick brown fox jumps over the lazy dog.</td>
+          </tr>
+          <tr>
+            <td>Bold text</td>
+            <td>Barlow, 700</td>
+            <td><strong>The quick brown fox jumps over the lazy dog.</strong></td>
+          </tr>
+          <tr>
+            <td>Italic text</td>
+            <td>Barlow, italic</td>
+            <td><em>The quick brown fox jumps over the lazy dog.</em></td>
+          </tr>
+          <tr>
+            <td>Headings</td>
+            <td>Trebuchet MS, 2px letter spacing</td>
+            <td class="heading-sample">Entry Title</td>
+          </tr>
+          <tr>
+            <td>Page title</td>
+            <td>Trebuchet MS, uppercase</td>
+            <td class="heading-sample">CHARLES IZZO</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Spacing -->
+      <section class="entry">
+        <h2>Spacing</h2>
+        <ul>
+          <li><strong>Header padding:</strong> 20px</li>
+          <li><strong>Entry card padding:</strong> 25px</li>
+          <li><strong>Space between entry cards:</strong> 30px</li>
+          <li><strong>Max content width:</strong> 700px</li>
+          <li><strong>Rounded corners:</strong> 10px on cards, 8px on images</li>
+          <li><strong>Line height:</strong> 1.6</li>
+        </ul>
+      </section>
+
+      <!-- Components -->
+      <section class="entry">
+        <h2>Components</h2>
+
+        <h3>Entry card</h3>
+        <p>
+          White box with a 2px burgundy border and rounded corners. Each journal
+          entry goes in one. This box is an entry card.
+        </p>
+
+        <h3>Quote</h3>
+        <blockquote>
+          <p>A quote goes here, in italics with an indented first line.</p>
+          <p class="quote-author">&mdash; Author Name</p>
+        </blockquote>
+
+        <h3>Image</h3>
+        <p>
+          Images are centered, up to 500px wide, with rounded corners. They
+          lift up slightly when you hover over them.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

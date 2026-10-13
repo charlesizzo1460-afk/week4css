@@ -1,0 +1,113 @@
+/* Week 4 Homework - CSS
+   Charles Izzo */
+
+/* 1. Universal selector: reset spacing on every element */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* 2. Element (type) selector */
+body {
+  font-family: "Barlow", Arial, sans-serif;         /* font */
+  background-color: #f7f1e8;                        /* color */
+  color: #2b2b2b;                                   /* color */
+  line-height: 1.6;
+}
+
+/* 3. ID selector */
+#top-bar {
+  position: sticky;           /* positioning: header stays at the top while scrolling */
+  top: 0;
+  z-index: 10;
+  background-color: #800020;  /* burgundy */
+  color: white;
+  padding: 20px;              /* box model */
+  text-align: center;         /* text formatting */
+}
+
+/* 4. Grouping selector: style both heading levels at once */
+h1,
+h2 {
+  font-family: "Trebuchet MS", Arial, sans-serif;   /* font */
+  letter-spacing: 2px;
+}
+
+h1 {
+  text-transform: uppercase;  /* text formatting */
+}
+
+/* 5. Class selector */
+.subtitle {
+  font-style: italic;         /* font */
+  opacity: 0.85;
+}
+
+.entry {
+  max-width: 700px;
+  margin: 30px auto;          /* box model: centers the section */
+  padding: 25px;              /* box model */
+  background-color: white;
+  border: 2px solid #800020;  /* box model */
+  border-radius: 10px;
+}
+
+/* 6. Descendant selector: only h2s inside an .entry */
+.entry h2 {
+  color: #800020;
+  border-bottom: 1px dashed #800020;
+  margin-bottom: 15px;
+}
+
+/* 7. Attribute selector: any img that has an alt attribute */
+img[alt] {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 8px;
+  position: relative;         /* positioning: lets the hover effect nudge it */
+  top: 0;
+  transition: top 0.2s;
+}
+
+/* 8. Pseudo-class selector */
+img[alt]:hover {
+  top: -6px;
+}
+
+/* 9. Child selector: paragraphs directly inside the blockquote */
+blockquote > p {
+  font-style: italic;
+  text-indent: 20px;          /* text formatting */
+}
+
+blockquote {
+  background-color: #f3e4e7;
+  border-left: 6px solid #800020;
+  padding: 15px 20px;
+  margin-top: 20px;
+}
+
+.quote-author {
+  text-align: right;          /* text formatting */
+  font-weight: bold;
+}
+
+/* Footer with a link to the style guide */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 2px solid #800020;
+}
+
+.site-footer a {
+  color: #800020;
+  font-weight: bold;
+}
+
+/* Pseudo-class: change the link when you hover over it */
+.site-footer a:hover {
+  color: #2b2b2b;
+}
